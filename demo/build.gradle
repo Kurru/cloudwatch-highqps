@@ -15,10 +15,10 @@ repositories {
 }
 
 dependencies {
-    implementation platform("software.amazon.awssdk:bom:2.17.148")
+    implementation platform("software.amazon.awssdk:bom:2.18.8")
     implementation "software.amazon.awssdk:cloudwatch-metric-publisher"
 
-    runtimeOnly "org.slf4j:slf4j-simple:1.7.36"
+    runtimeOnly 'org.slf4j:slf4j-simple:2.0.3'
 }
 
 application {

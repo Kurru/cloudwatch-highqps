@@ -33,7 +33,7 @@ public class HighQpsRepo {
 
     logger.info("Creating lots of latency metrics");
 
-    for (int i = 0; i < 1000; i++) {
+    for (int i = 0; i < 160; i++) {
       MetricCollector methodCollector = MetricCollector.create("RPC");
       methodCollector.reportMetric(CoreMetric.API_CALL_DURATION, Duration.ofMillis(i));
       methodCollector.reportMetric(CoreMetric.OPERATION_NAME, "YourRPC");
